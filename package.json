@@ -1,0 +1,10 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "description": "Texas poker game",
+  "dependencies": {
+    "express": "latest",
+    "socket.io": "^1.2.1",
+    "texas": "latest"
+  }
+}

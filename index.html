@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Texas Hold'em</title>
+    <link rel="stylesheet" href="res/css/client.css">
+</head>
+<body>
+    <div id="nickname-div">
+        <label for="nickname-inbox">Set nickname here!</label>
+        <input id="nickname-inbox" type="text" />
+        <button type="button" id="nickname-btn">Set</button>
+    </div>
+    <div id="prepare-div">
+        <p>Player list:</p>
+        <ul id="player-list">
+        </ul>
+        <button type="button" id="prepare-btn">Prepare!</button>
+    </div>
+    <div id="game-div">
+        <p>Game started!</p>
+        <div id="table-status">
+            <div id="game-table">
+
+            </div>
+            <div id="other-players">
+
+            </div>
+            <div id="my-controller">
+                <button value="add 5" id="add-5-button">Add 5</button>
+                <button value="check" id="check-button">Check</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="res/js/jquery-2.1.1.min.js"></script>
+<script src="res/Player.js"></script>
+<script src="client.js"></script>
+<script src="clientUI.js"></script>
+</html>
